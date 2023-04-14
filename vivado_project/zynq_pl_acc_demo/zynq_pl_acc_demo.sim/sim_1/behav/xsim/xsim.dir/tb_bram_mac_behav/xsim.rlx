@@ -1,0 +1,12 @@
+
+{ 
+    crc :  15374040510774193154  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto fb18bbe764344fd390417635dfd5c07a --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_bram_mac_behav xil_defaultlib.tb_bram_mac xil_defaultlib.glbl" , 
+    buildDate : "May 24 2019" , 
+    buildTime : "15:06:07" , 
+    linkCmd : "D:\\SoftwareRoot\\Vivado2019.1\\Vivado\\2019.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/tb_bram_mac_behav/xsimk.exe\"   \"xsim.dir/tb_bram_mac_behav/obj/xsim_0.win64.obj\" \"xsim.dir/tb_bram_mac_behav/obj/xsim_1.win64.obj\" -L\"D:\\SoftwareRoot\\Vivado2019.1\\Vivado\\2019.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

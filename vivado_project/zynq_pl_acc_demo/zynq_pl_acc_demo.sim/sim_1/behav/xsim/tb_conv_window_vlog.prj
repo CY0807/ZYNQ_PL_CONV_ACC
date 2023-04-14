@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../zynq_pl_acc_demo.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../zynq_pl_acc_demo.srcs/sources_1/bd/system/ipshared/8c62/hdl" --include "../../../../zynq_pl_acc_demo.srcs/sources_1/ip/pll" --include "D:/SoftwareRoot/Vivado2019.1/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../../zynq_pl_acc_demo.srcs/sources_1/ip/fifo_conv_window/sim/fifo_conv_window.v" \
+"../../../../zynq_pl_acc_demo.srcs/sources_1/new/conv_window.v" \
+"../../../../zynq_pl_acc_demo.srcs/sources_1/new/padding.v" \
+"../../../../zynq_pl_acc_demo.srcs/sim_1/new/tb_conv_window.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Apr 14 08:55:52 2023
+# Process ID: 25424
+# Current directory: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/ila_bram_mac_synth_1
+# Command line: vivado.exe -log ila_bram_mac.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_bram_mac.tcl
+# Log file: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/ila_bram_mac_synth_1/ila_bram_mac.vds
+# Journal file: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/ila_bram_mac_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ila_bram_mac.tcl -notrace

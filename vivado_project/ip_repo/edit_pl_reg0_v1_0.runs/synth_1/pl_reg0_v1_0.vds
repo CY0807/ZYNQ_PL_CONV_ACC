@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr  8 16:20:58 2023
+# Process ID: 19524
+# Current directory: d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/edit_pl_reg0_v1_0.runs/synth_1
+# Command line: vivado.exe -log pl_reg0_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pl_reg0_v1_0.tcl
+# Log file: d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/edit_pl_reg0_v1_0.runs/synth_1/pl_reg0_v1_0.vds
+# Journal file: d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/edit_pl_reg0_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pl_reg0_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg0_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/myip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2207] Repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/myip_1.0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/myip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/github_repo/ZYNQ_PL_CONV/github_repo/ip_repo/AXI2PL_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/SoftwareRoot/Vivado2019.1/Vivado/2019.1/data/ip'.
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg0_1.0/hdl/pl_reg0_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg0_1.0/hdl/pl_reg0_v1_0.v:]
+Command: synth_design -top pl_reg0_v1_0 -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6828 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 574.355 ; gain = 186.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pl_reg0_v1_0' [d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg0_1.0/hdl/pl_reg0_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pl_reg0_v1_0_S00_AXI' [d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg0_1.0/hdl/pl_reg0_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg0_1.0/hdl/pl_reg0_v1_0_S00_AXI.v:359]
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg0_v1_0_S00_AXI' (1#1) [d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg0_1.0/hdl/pl_reg0_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg0_v1_0' (2#1) [d:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg0_1.0/hdl/pl_reg0_v1_0.v:4]
+WARNING: [Synth 8-3331] design pl_reg0_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design pl_reg0_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design pl_reg0_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design pl_reg0_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design pl_reg0_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design pl_reg0_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]

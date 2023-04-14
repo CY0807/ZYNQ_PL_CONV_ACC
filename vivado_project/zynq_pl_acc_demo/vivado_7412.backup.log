@@ -1,0 +1,190 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 11 15:36:07 2023
+# Process ID: 7412
+# Current directory: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8948 D:\github_repo\ZYNQ_PL_CONV\vivado_project\zynq_pl_acc_demo\zynq_pl_acc_demo.xpr
+# Log file: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/vivado.log
+# Journal file: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/myip_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/myip_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/github_repo/ZYNQ_PL_CONV/github_repo/ip_repo/AXI2PL_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg0_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/pl_reg_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/myip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2207] Repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/myip_1.0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/github_repo/ZYNQ_PL_CONV/vivado_project/ip_repo/myip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/github_repo/ZYNQ_PL_CONV/github_repo/ip_repo/AXI2PL_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/SoftwareRoot/Vivado2019.1/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1000.133 ; gain = 287.332
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sim_1/new/tb_configurator.v w ]
+add_files -fileset sim_1 D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sim_1/new/tb_configurator.v
+update_compile_order -fileset sim_1
+set_property top tb_configurator [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/SoftwareRoot/Vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_configurator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xilinx_vip -prj tb_configurator_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/new/configurator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module configurator
+ERROR: [VRFC 10-2989] 'conv_coff_en' is not declared [D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/new/configurator.v:51]
+ERROR: [VRFC 10-2989] 'conv_data_en' is not declared [D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/new/configurator.v:52]
+ERROR: [VRFC 10-2989] 'conv_coff_en' is not declared [D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/new/configurator.v:68]
+ERROR: [VRFC 10-2989] 'conv_data_en' is not declared [D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/new/configurator.v:71]
+ERROR: [VRFC 10-2989] 'conv_coff_en' is not declared [D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/new/configurator.v:83]
+ERROR: [VRFC 10-2989] 'conv_data_en' is not declared [D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/new/configurator.v:84]
+ERROR: [VRFC 10-2865] module 'configurator' ignored due to previous errors [D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/new/configurator.v:30]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/SoftwareRoot/Vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_configurator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xilinx_vip -prj tb_configurator_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/new/configurator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module configurator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sim_1/new/tb_configurator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_configurator
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim'
+"xelab -wto fb18bbe764344fd390417635dfd5c07a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_configurator_behav xil_defaultlib.tb_configurator xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/SoftwareRoot/Vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto fb18bbe764344fd390417635dfd5c07a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_configurator_behav xil_defaultlib.tb_configurator xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.configurator
+Compiling module xil_defaultlib.tb_configurator
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_configurator_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim/xsim.dir/tb_configurator_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim/xsim.dir/tb_configurator_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Apr 11 15:52:48 2023. For additional details about this file, please refer to the WebTalk help file at D:/SoftwareRoot/Vivado2019.1/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 11 15:52:48 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_configurator_behav -key {Behavioral:sim_1:Functional:tb_configurator} -tclbatch {tb_configurator.tcl} -protoinst "protoinst_files/bd_44e3.protoinst" -protoinst "protoinst_files/bd_d5b8.protoinst" -protoinst "protoinst_files/system.protoinst" -view {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/tb_padding_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_44e3.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_44e3.protoinst for the following reason(s):
+There are no instances of module "bd_44e3" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_d5b8.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_d5b8.protoinst for the following reason(s):
+There are no instances of module "bd_d5b8" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/system.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/system.protoinst for the following reason(s):
+There are no instances of module "system" in the design.
+
+Time resolution is 1 ps
+open_wave_config D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/tb_padding_behav.wcfg
+WARNING: Simulation object /tb_padding/padding_inst/clk was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/rst_n was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/start was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/enable was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/data_valid was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/data_req was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/data_in was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/data_in_valid was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/data_out was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/data_out_valid was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/row was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/col was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/max_width was not found in the design.
+WARNING: Simulation object /tb_padding/padding_inst/max_height was not found in the design.
+source tb_configurator.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 305 ns : File "D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sim_1/new/tb_configurator.v" Line 85
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_configurator_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1957.125 ; gain = 14.867
+current_wave_config {tb_padding_behav.wcfg}
+tb_padding_behav.wcfg
+add_wave {{/tb_configurator/configurator_inst}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$finish called at time : 305 ns : File "D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sim_1/new/tb_configurator.v" Line 85
+save_wave_config {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/tb_padding_behav.wcfg}
+save_wave_config {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/tb_padding_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2027.379 ; gain = 70.254
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_conv_window -dir d:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {fifo_conv_window} CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {32} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {32} CONFIG.Output_Depth {512} CONFIG.Use_Dout_Reset {true} CONFIG.Valid_Flag {true} CONFIG.Use_Extra_Logic {true} CONFIG.Data_Count {true} CONFIG.Data_Count_Width {10} CONFIG.Write_Data_Count_Width {10} CONFIG.Read_Data_Count_Width {10} CONFIG.Full_Threshold_Assert_Value {511} CONFIG.Full_Threshold_Negate_Value {510} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5}] [get_ips fifo_conv_window]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'fifo_conv_window' to 'fifo_conv_window' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files d:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/ip/fifo_conv_window/fifo_conv_window.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_conv_window'...
+generate_target all [get_files  d:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/ip/fifo_conv_window/fifo_conv_window.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_conv_window'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo_conv_window'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo_conv_window'...
+catch { config_ip_cache -export [get_ips -all fifo_conv_window] }
+export_ip_user_files -of_objects [get_files d:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/ip/fifo_conv_window/fifo_conv_window.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/ip/fifo_conv_window/fifo_conv_window.xci]
+launch_runs -jobs 4 fifo_conv_window_synth_1
+[Tue Apr 11 16:14:59 2023] Launched fifo_conv_window_synth_1...
+Run output will be captured here: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/fifo_conv_window_synth_1/runme.log
+export_simulation -of_objects [get_files d:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.srcs/sources_1/ip/fifo_conv_window/fifo_conv_window.xci] -directory D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.ip_user_files/sim_scripts -ip_user_files_dir D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.ip_user_files -ipstatic_source_dir D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.cache/compile_simlib/modelsim} {questa=D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.cache/compile_simlib/questa} {riviera=D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.cache/compile_simlib/riviera} {activehdl=D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 19:30:51 2023...

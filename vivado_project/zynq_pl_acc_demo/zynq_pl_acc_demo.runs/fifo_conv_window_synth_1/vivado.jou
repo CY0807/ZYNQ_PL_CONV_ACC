@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 11 16:15:01 2023
+# Process ID: 22068
+# Current directory: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/fifo_conv_window_synth_1
+# Command line: vivado.exe -log fifo_conv_window.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_conv_window.tcl
+# Log file: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/fifo_conv_window_synth_1/fifo_conv_window.vds
+# Journal file: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/fifo_conv_window_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_conv_window.tcl -notrace

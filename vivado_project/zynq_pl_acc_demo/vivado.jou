@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Apr 14 09:39:36 2023
+# Process ID: 15800
+# Current directory: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12072 D:\github_repo\ZYNQ_PL_CONV\vivado_project\zynq_pl_acc_demo\zynq_pl_acc_demo.xpr
+# Log file: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/vivado.log
+# Journal file: D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.xpr
+update_compile_order -fileset sources_1
+file mkdir D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sdk
+file copy -force D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/impl_1/system_wrapper.sysdef D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sdk/system_wrapper.hdf
+
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+launch_sdk -workspace D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sdk -hwspec D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.sdk/system_wrapper.hdf
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"Conv_Acc_inst/bram_mac_inst/your_instance_name"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {Conv_Acc_inst/bram_mac_inst/data_in_valid} {Conv_Acc_inst/bram_mac_inst/complete} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"Conv_Acc_inst/bram_mac_inst/your_instance_name"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"Conv_Acc_inst/bram_mac_inst/your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"Conv_Acc_inst/bram_mac_inst/your_instance_name"}]]
+save_wave_config {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {D:/github_repo/ZYNQ_PL_CONV/vivado_project/zynq_pl_acc_demo/zynq_pl_acc_demo.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw

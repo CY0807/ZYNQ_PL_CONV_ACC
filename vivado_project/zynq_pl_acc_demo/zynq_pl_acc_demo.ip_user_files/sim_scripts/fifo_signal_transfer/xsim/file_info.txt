@@ -1,0 +1,2 @@
+fifo_signal_transfer.v,verilog,xil_defaultlib,../../../../zynq_pl_acc_demo.srcs/sources_1/ip/fifo_signal_transfer/sim/fifo_signal_transfer.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

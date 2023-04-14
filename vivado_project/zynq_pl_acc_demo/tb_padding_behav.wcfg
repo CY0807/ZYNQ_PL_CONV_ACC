@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Conv_Acc_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_Conv_Acc" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="11000000001fs"></ZoomEndTime>
+      <Cursor1Time time="4340178000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="327"></NameColumnWidth>
+      <ValueColumnWidth column_width="372"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_Conv_Acc/clk_ps" type="logic">
+      <obj_property name="ElementShortName">clk_ps</obj_property>
+      <obj_property name="ObjectShortName">clk_ps</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/M_AXIS_MM2S_0_tkeep" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_MM2S_0_tkeep</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_MM2S_0_tkeep</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/M_AXIS_MM2S_0_tdata" type="array">
+      <obj_property name="ElementShortName">M_AXIS_MM2S_0_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_MM2S_0_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/M_AXIS_MM2S_0_tlast" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_MM2S_0_tlast</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_MM2S_0_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/M_AXIS_MM2S_0_tvalid" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_MM2S_0_tvalid</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_MM2S_0_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/S_AXIS_S2MM_0_tready" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_S2MM_0_tready</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_S2MM_0_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/M_AXIS_MM2S_0_tready" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_MM2S_0_tready</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_MM2S_0_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/S_AXIS_S2MM_0_tlast" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_S2MM_0_tlast</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_S2MM_0_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/S_AXIS_S2MM_0_tvalid" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_S2MM_0_tvalid</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_S2MM_0_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/S_AXIS_S2MM_0_tdata" type="array">
+      <obj_property name="ElementShortName">S_AXIS_S2MM_0_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_S2MM_0_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/S_AXIS_S2MM_0_tkeep" type="array">
+      <obj_property name="ElementShortName">S_AXIS_S2MM_0_tkeep[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_S2MM_0_tkeep[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/cfg_reg0" type="array">
+      <obj_property name="ElementShortName">cfg_reg0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cfg_reg0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/cfg_reg1" type="array">
+      <obj_property name="ElementShortName">cfg_reg1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cfg_reg1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/img_data_en" type="logic">
+      <obj_property name="ElementShortName">img_data_en</obj_property>
+      <obj_property name="ObjectShortName">img_data_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/stat_reg0[0]" type="logic">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/stat_reg0[1]" type="logic">
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">[1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Conv_Acc/stat_reg0[2]" type="logic">
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">[2]</obj_property>
+   </wvobject>
+</wave_config>

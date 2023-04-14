@@ -1,0 +1,2 @@
+ila_bram_mac.v,verilog,xil_defaultlib,../../../../zynq_pl_acc_demo.srcs/sources_1/ip/ila_bram_mac/sim/ila_bram_mac.v,incdir="../../../../zynq_pl_acc_demo.srcs/sources_1/ip/ila_bram_mac/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="fifo_signal_transfer_synth_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1681118891">
+  <File Type="PA-TCL" Name="fifo_signal_transfer.tcl"/>
+  <File Type="REPORTS-TCL" Name="fifo_signal_transfer_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fifo_signal_transfer.vds"/>
+  <File Type="RDS-UTIL" Name="fifo_signal_transfer_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fifo_signal_transfer_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fifo_signal_transfer.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_signal_transfer">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_signal_transfer/fifo_signal_transfer.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_signal_transfer"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_signal_transfer">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_signal_transfer/fifo_signal_transfer.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_signal_transfer"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

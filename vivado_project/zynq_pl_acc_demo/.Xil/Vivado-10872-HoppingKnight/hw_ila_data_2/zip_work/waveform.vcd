@@ -1,0 +1,58 @@
+$date
+        2023-Apr-14 08:50:22
+$end
+$version
+        Vivado v2019.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " system_i/system_ila_0/inst/net_slot_0_axis_tdata [31:0] $end
+$var reg 4 B system_i/system_ila_0/inst/net_slot_0_axis_tkeep [3:0] $end
+$var reg 1 F system_i/system_ila_0/inst/net_slot_0_axis_tvalid $end
+$var reg 1 G system_i/system_ila_0/inst/net_slot_0_axis_tready $end
+$var reg 1 H system_i/system_ila_0/inst/net_slot_0_axis_tlast $end
+$var reg 32 I system_i/system_ila_0/inst/net_slot_1_axis_tdata [31:0] $end
+$var reg 4 i system_i/system_ila_0/inst/net_slot_1_axis_tkeep [3:0] $end
+$var reg 1 m system_i/system_ila_0/inst/net_slot_1_axis_tvalid $end
+$var reg 1 n system_i/system_ila_0/inst/net_slot_1_axis_tready $end
+$var reg 1 o system_i/system_ila_0/inst/net_slot_1_axis_tlast $end
+$var reg 3 p Interface__i2_s0___axi_dma_0_M_AXIS_MM2S_ [2:0] $end
+$var reg 3 s Interface__i2_s1___S_AXIS_S2MM_0_1_ [2:0] $end
+$var reg 3 v T_Channel__i2_s0___axi_dma_0_M_AXIS_MM2S_ [2:0] $end
+$var reg 3 y T_Channel__i2_s1___S_AXIS_S2MM_0_1_ [2:0] $end
+$var reg 1 | _TRIGGER $end
+$var reg 1 } _WINDOW $end
+$var reg 1 ~ _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1100100 "
+b1111 B
+0F
+1G
+0H
+b0 I
+b1111 i
+0m
+1n
+0o
+b11 p
+b0 s
+b11 v
+b0 y
+0|
+1}
+0~
+$end
+#512
+1m
+b1 s
+b1 y
+1|
+#513
+0m
+b0 s
+b0 y
