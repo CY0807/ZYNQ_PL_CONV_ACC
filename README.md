@@ -95,7 +95,103 @@ endcase
 
 ## 3 软件设计
 
+详见工程中的sdk目录，核心代码如下：
 
+````
+int Status;
+TxDone = 0;
+RxDone = 0;
+int Index;
+int width = 10;
+int height = 10;
+int Len = width*height;
+xil_printf("\r\n----Test----\r\n");
+xil_printf("Len=%d\r\n",Len);
+// set TX data
+for(Index = 0; Index < Len; Index ++) {
+	TxBufferPtr[Index] = Index+1;
+}
+xil_printf("TX data ready!\r\n");
+
+// 1.configure image width
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 1);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 10);
+
+// 2.configure image height
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 2);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 10);
+
+// 3.configure data decimal num
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 5);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 0);
+
+// 4.disable bram mac and read
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 6);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 0);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 7);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 0);
+
+// 5.configure conv coff
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 3);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 1);
+	// conv coff TX data to DMA
+int Len_conv_coff = 10;
+Xil_DCacheFlushRange((u32)conv_coff, Len_conv_coff*4);
+Status = XAxiDma_SimpleTransfer(&AxiDma,(u32)conv_coff,
+		Len_conv_coff*4, XAXIDMA_DMA_TO_DEVICE);
+if (Status != XST_SUCCESS) {
+	xil_printf("conv coff to DMA Fail!\r\n");
+	return XST_FAILURE;
+}
+while(TxDone == 0);
+xil_printf("conv coff to DMA OK!\r\n");
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 3);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 0);
+usleep(10);
+
+// 6.configure conv image data
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 4);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 1);
+	// conv coff TX data to DMA
+Xil_DCacheFlushRange((u32)TxBufferPtr, Len*4);
+Status = XAxiDma_SimpleTransfer(&AxiDma,(u32)TxBufferPtr,
+		Len*4, XAXIDMA_DMA_TO_DEVICE);
+if (Status != XST_SUCCESS) {
+	xil_printf("conv image data to DMA Fail!\r\n");
+	return XST_FAILURE;
+}
+while(TxDone == 0);
+xil_printf("conv image data to DMA OK!\r\n");
+
+// 7.wait for covolution complete
+while((*pl_state) & 0x00000002 == 0);
+xil_printf("conv OK!\r\n");
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 4);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 0);
+usleep(10);
+
+// 8.read convolution result
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 7);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 1);
+	// DMA data to RX
+Status = XAxiDma_SimpleTransfer(&AxiDma,(u32)RxBufferPtr,
+		Len*4, XAXIDMA_DEVICE_TO_DMA);
+if (Status != XST_SUCCESS) {
+	xil_printf("DMA data to RX Fail!\r\n");
+	return XST_FAILURE;
+}	
+while(RxDone == 0);
+#ifndef __aarch64__
+	Xil_DCacheInvalidateRange((u32)RxBufferPtr, Len*4);
+#endif
+xil_printf("DMA data to RX OK!\r\n");
+
+// 9.wait util read result complete
+usleep(10);
+while((*pl_state)&0x00000004 == 0);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR, 7);
+Xil_Out32(XPAR_PL_REG0_S00_AXI_BASEADDR+4, 0);
+````
 
 
 
